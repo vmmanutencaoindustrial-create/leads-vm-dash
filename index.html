@@ -160,6 +160,7 @@ function render(){
       <div class="acts">
         ${l.w?`<a class="btn bwa" target="_blank" rel="noopener" href="${esc(waLink(l))}" data-k="${esc(k)}">WhatsApp</a>`:""}
         ${l.w?`<button class="btn bcp" data-cp="${esc(k)}">📋 Copiar</button>`:""}
+        <a class="btn bgg" target="_blank" rel="noopener" href="https://www.google.com/search?q=${encodeURIComponent('"'+l.e+'" '+(l.c||'')+' instagram')}">📸 Insta?</a>
         <a class="btn bgg" target="_blank" rel="noopener" href="${esc(ggLink(l))}">📍 Google</a>
       </div>
       <select class="status s-${st}" data-k="${esc(k)}">
